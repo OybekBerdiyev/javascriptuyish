@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "The Oybek's Channel",
+    "username": "oybekschannel",
+    "description": "this channel is very good",
+    "photo": "0002c55ce26a07954520cf89bda1966e_1690269079754.JPG",
+    "owner": "1"
+  },
+  {
+    "id": 2,
+    "name": "English home",
+    "username": "english",
+    "description": "this channel for english users",
+    "photo": "828abce22bdcd2e23bfae4fdaa07432e_1690288704524.jpg",
+    "owner": "1"
+  }
+]

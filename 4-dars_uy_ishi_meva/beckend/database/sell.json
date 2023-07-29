@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "anor",
+    "count": 10,
+    "price": 500000
+  },
+  {
+    "id": 2,
+    "name": "tarvuz",
+    "count": 30,
+    "price": 90000
+  },
+  {
+    "id": 3,
+    "name": "qovun",
+    "count": 20,
+    "price": 100000
+  }
+]

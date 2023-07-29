@@ -1,0 +1,38 @@
+[
+  {
+    "id": 2,
+    "name": "anor",
+    "count": 0,
+    "price": -100000
+  },
+  {
+    "id": 4,
+    "name": "qulupnay",
+    "count": 10,
+    "price": 200000
+  },
+  {
+    "id": 5,
+    "name": "tarvuz",
+    "count": 20,
+    "price": 10000
+  },
+  {
+    "id": 6,
+    "name": "qovun",
+    "count": 30,
+    "price": 400000
+  },
+  {
+    "id": 7,
+    "name": "uzum",
+    "count": 10,
+    "price": 300000
+  },
+  {
+    "id": 8,
+    "name": "olma",
+    "count": 10,
+    "price": 300000
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "fullName": "oybek",
+    "phoneNumber": "+9989383376838",
+    "bio": "the Berdiyev Oybek",
+    "username": "oybek25",
+    "photo": "0002c55ce26a07954520cf89bda1966e_1690268570976.JPG",
+    "createdAt": "2023-07-25T07:02:50.985Z"
+  },
+  {
+    "id": 2,
+    "fullName": "Ilxom",
+    "phoneNumber": "+998931234567",
+    "bio": "this is Ilxom Majidov",
+    "username": "majidow",
+    "photo": "828abce22bdcd2e23bfae4fdaa07432e_1690291393776.jpg",
+    "createdAt": "2023-07-25T13:23:13.780Z"
+  }
+]
