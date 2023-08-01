@@ -1,0 +1,18 @@
+[
+  {
+    "userId": 2,
+    "productId": "1",
+    "address": "Cilonzor 12 kvartal 17dom 24kv",
+    "price": 15000,
+    "count": 3,
+    "profit": 45000
+  },
+  {
+    "userId": 2,
+    "productId": "2",
+    "address": "Cilonzor 12 kvartal 17dom 24kv",
+    "price": 1500,
+    "count": 10,
+    "profit": 15000
+  }
+]

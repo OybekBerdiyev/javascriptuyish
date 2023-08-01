@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "firstName": "Oybek",
+    "lastName": "Berdiyev",
+    "phoneNumber": "+998938376838",
+    "password": "$2b$12$xBsDIiWvjpjOeg42qg2Omuf0RFOpVklCTPfFEA7QaUSKpIc9JmJkC",
+    "isAdmin": true
+  }
+  
+]

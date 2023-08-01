@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "photo": "f8f479ea-0fbb-4dcc-9143-0f23f16f1650.jpg",
+    "title": "Olma",
+    "description": "Tabiy olma dalaniki. qizil yashil ranglari mavjud har xil turdagi murobbolar tayyorlash uchun juda asqotadi",
+    "sell": 15000,
+    "count": 47,
+    "buy": 10000
+  },
+  {
+    "id": 2,
+    "photo": "a98ff89e-a193-44a6-bc67-48c21674e358.jpeg",
+    "title": "Tarvuz",
+    "description": "Tarvuz butun dunyo boʻylab tropikdan moʻtadil mintaqalargacha boʻlgan qulay iqlim sharoitida oʻzining katta yeyiladigan mevasi uchun oʻstiriladi, bu qattiq qobigʻi va ichki boʻlinmalari boʻlmagan rezavor meva boʻlib, botanikada „pepo“ deb ataladi",
+    "sell": 1500,
+    "count": 140,
+    "buy": 2500
+  }
+]
