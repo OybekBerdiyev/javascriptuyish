@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: #65ec92;
+}
+.link {
+    margin-right: 10px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+}
+
+.link a:last-child {
+    margin-right: 0;
+}
+
+.h2-container i {
+  color: red;
+}
+
+.h2-container {
+    flex-grow: 1;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.users-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.user-card {
+    flex: 0 0 calc(25% - 20px); 
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.user-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-card a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.user-card img {
+    width: 150px;
+    height: 150px; 
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h3 {
+    margin: 5px 0;
+}

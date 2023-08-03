@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "firstName": "Oybek",
+    "lastName": "Berdiyev",
+    "email": "oybek@gmail.com",
+    "password": "$2b$12$B5n1c9gUFttBJq8iauKDkOE8DMJINoOxGU7GW6i/PKsz31f0YVnX6",
+    "photo": "6fef85e3-7f5a-4a25-a78a-ebfeea8898f7.JPG"
+  },
+  {
+    "id": 2,
+    "firstName": "Fayod",
+    "lastName": "Qahhorov",
+    "email": "fayodjon@gmail.com",
+    "password": "$2b$12$UM0EW5GNvi42Bv32vxIldeJ5nqNvsP6nKWNxDQZRafE5rCeJGcaqO",
+    "photo": "7a87ad1c-69d9-42a2-bff7-664827b01986.jpg"
+  }
+]

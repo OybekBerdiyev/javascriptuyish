@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Nano uzbek",
+    "description": "ha bu nano uzbek",
+    "video": "bb56d1ca-59d1-4cb7-b3d5-8f7c2186b5c1.MP4",
+    "owner": 1
+  },
+  {
+    "id": 2,
+    "title": "Yeb ichib",
+    "description": "ups dups",
+    "video": "bb56d1ca-59d1-4cb7-b3d5-8f7c2186b5c1.mp4",
+    "owner": 2
+  },
+  {
+    "id": 3,
+    "title": "Shum bola",
+    "description": "degan akan",
+    "video": "e408926f-5474-4cf0-9685-afd36531e316.mp4",
+    "owner": 2
+  }
+]

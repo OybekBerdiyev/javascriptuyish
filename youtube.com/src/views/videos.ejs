@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Tube</title>
+    <link rel="stylesheet" href="/css/videos.style.css">
+</head>
+<body>
+    <div class="users-container">
+        <% video.forEach((vid) => { %>
+        <div class="user-card">
+            <div class="video-container">
+                <video controls autoplay>
+                    <source src="/<%=vid.video %>">
+                </video>
+            </div>
+            <h3><%= vid.title %></h3>
+        </div>
+        <%})%>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+Reset some default styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #8ae2ee;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 10px;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .title h3 {
+    font-size: 24px;
+    color: #007bff;
+  }
+  
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputs input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .inputs input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .inputs input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .inputs input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container {
+      max-width: 90%;
+    }
+  }
+  
