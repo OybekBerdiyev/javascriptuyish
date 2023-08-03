@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+
+    #chat-box {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    input[type="text"],
+    select {
+        flex: 1;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    #btn {
+        flex: 1;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #btn:hover {
+        background-color: #45a049;
+    }
+    #btn2 {
+        flex: 1;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #btn2:hover {
+        background-color: #45a049;
+    }
+
+    input[type="submit"] {
+        flex: 1;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+<body>
+    <div id="chat-box">
+    </div>
+
+    <form>
+        <input type="text" name="name" id="name" placeholder="Your name">
+        <button id="btn">Yuborish</button>
+        <input type="text" name="text" id="text" placeholder="Your message">
+        <select name="select" id="select"></select>
+        <input type="submit" value="Yuborish">
+        <button id="btn2">hammaga yuborish</button>
+    </form>
+</body>
+</html>
+<script type="module">
+    import { io } from "https://cdn.socket.io/4.3.2/socket.io.esm.min.js"
+    const socket = io();
+    const form =  document.querySelector("form");
+    const chatBox = document.getElementById("chat-box");
+    const text = document.getElementById("text");
+    const name = document.getElementById("name");
+    const btn = document.getElementById("btn");
+    const btn2 = document.getElementById("btn2");
+    const select = document.getElementById("select");
+
+    btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        socket.emit("name", {
+            name: name.value
+        });
+    });
+
+    btn2.addEventListener("click", (e) => {
+        e.preventDefault();
+        const message = text.value;
+        socket.emit("all", {
+            text: message
+        });
+    });
+
+
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const selectedUserId = select.value;
+        const message = text.value;
+        socket.emit("message", {
+            to: selectedUserId,
+            text: message
+        });
+
+        const sentMessage = document.createElement("p");
+        sentMessage.textContent = `You: ${message}`;
+        chatBox.appendChild(sentMessage);
+        text.value = "";
+    });
+    
+    socket.on("users", ({ users }) => {
+
+        select.innerHTML = "";
+        for (let i = 0; i < users.length; i++) {
+            const option = document.createElement("option");
+            option.textContent = users[i].name;
+            option.value = users[i].id;
+            select.appendChild(option);
+        } 
+    });
+    socket.on("allres",({user ,text})=>{
+        const receivedMessage = document.createElement("p");
+        receivedMessage.textContent = `${user.name}: ${text}`;
+        chatBox.appendChild(receivedMessage);  
+    })
+    socket.on("message", ({ user, text }) => {
+        const receivedMessage = document.createElement("p");
+        receivedMessage.textContent = `${user.name}: ${text}`;
+        chatBox.appendChild(receivedMessage);
+    });
+</script>
+</html>
