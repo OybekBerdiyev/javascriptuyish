@@ -1,0 +1,17 @@
+{
+  "name": "bot_majburiy_obuna",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "grammy": "^1.17.2",
+    "nodemon": "^3.0.1",
+    "uuid": "^9.0.0"
+  }
+}
