@@ -1,5 +1,5 @@
 const { Bot, Keyboard } = require("grammy");
-const bot = new Bot("6533472212:AAGt_EkrOE6kW14tV80nd-a5VPVYJ1mS_Is");
+const bot = new Bot("TOKEN_HERE");
 
 bot.command("start", async (ctx) => {
   await ctx.reply("😊 Assalomu alaykum. Men sizning joylashuvingiz bilan Najot ta'lim(chilonzor) orasidagi masofasini hisoblab beradi \n \n Iltimos joylashuvingizni yuboring. \n Bot created by: @oybek25", {
