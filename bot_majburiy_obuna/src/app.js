@@ -1,7 +1,7 @@
 const { Bot,} = require("grammy");
 const { isChecked } = require("./middleware/isAuth");
 const isJoin = require("./middleware/isJoin.middleware");
-const bot = new Bot("6222185600:AAEtkjo9LaOn_BOksvGqBrnKxZwtbcjz6qo");
+const bot = new Bot("You_token_here");
 
 bot.use(isChecked);
 bot.use(isJoin);
