@@ -2,8 +2,11 @@ const express = require("express");
 const config = require("config");
 const fileUpload = require("express-fileupload");
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 0c95270a227b3eb6e4c1fd2cfe7675a6d1425075
 const routes = require("./routes");
 
 const app = express();
