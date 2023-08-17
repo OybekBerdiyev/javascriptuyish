@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "name": "Feedback name",
+    "who": "customer",
+    "description": "this is Service description bo'ladi  bizning servicemizdan foydalaning    ",
+    "photo": "69047728-5159-4f66-8737-ad9cf3c8f7ee.jpg",
+    "isActive": false
+  }
+]

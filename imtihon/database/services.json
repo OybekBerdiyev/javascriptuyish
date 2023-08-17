@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "name": "Service name",
+    "description": "this is Service description bo'ladi  bizning servicemizdan foydalaning    ",
+    "photo": "2a5a5074-e735-466f-a40e-076517e701b9.jpg",
+    "isActive": true
+  }
+]
