@@ -17,7 +17,7 @@ app.use(fileUpload());
 app.use(express.static(process.cwd() + "/uploads"));
 
 
-app.use("/api", routes);
+app.use("/api", routes)
 
 const port = config.get("port");
 
