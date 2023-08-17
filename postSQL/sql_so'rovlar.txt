@@ -1,0 +1,45 @@
+Psql-commands
+
+1.\l - databaselar jadvalini ko'rish
+
+2.create database (database_name) - yangi database yaratish
+
+3.\c database_name   -   databaseni ichiga kirish
+
+4.\d - tabellar royxatini ko'rish
+
+5.create table table_name  -  yangi table qo'shish
+
+6.\d table_name  -  tableni ko'rish
+
+7. select * from users where fullname ilike '%J%' - katta yoki kichkina xarifligiga tekshirmaydi
+
+8.Or - yoki
+
+9.select * from users offset - limitdan keyingilarini olish uchun
+
+10.select distinct(country) from users - unical qilib olib beradi;
+
+11.and - va
+
+12. select * from users where ager BETWEEN 14 and 35 - 14 va 35 orasidagi sonlarni olib beradi
+
+13.select * from users where country IN ('Usbekistan', 'Kitay'); - Countrysi Uzbekistanga yoki Kitayga teng bolganlarni chiqarib beradi
+
+14.select * from table_name ORDER BY column_name ASC - o'sish tartibida saralash
+
+15.select * from table_name ORDER BY column_name DESC - kamayish tartibida saralash
+
+16.select * from table_name where condition LIMIT  - limit berish
+
+17.select * from car where model LIKE 'A%' - bosh xarfi A bilan boshlanadigonlarni chiqarib beradi
+
+18.select * from car where model LIKE '%a' - oxirgi xarfi a bilan boshlanadigonlarni chiqarib beradi
+
+19.select * from car where model LIKE '_p' - ikkinchi xarfi p bilan boshlanadigonlarni chiqarib beradi
+
+20.drop database (database_name) - kiritilgan databaseni ochirib beradi
+
+21.drop table (table_name)  -  kiritilgan tableni ochirib beradi
+
+22.\! cls - oynani tozalab beradi
