@@ -15,8 +15,8 @@ buyProduct = async (req, res) => {
         const promo = await knex('promo').select("*").where({ promo_id: product.promo_id }).first();
         
         const history = await knex('promo_history').select('*').where({ user_id: userId, promo_id: promo.promo_id }).first();
-        
-        if (!history) {
+        const now = ne Date()
+        if (!history || promo.dead_time>now) {
             if (promo.name !== promocode) {
                 return res.status(301).json({ message: "Incorrect Promocode" });
             }
