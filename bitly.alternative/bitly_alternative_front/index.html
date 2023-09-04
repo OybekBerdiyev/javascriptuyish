@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="title">
+        <h1>Generate Your Short URL</h1>
+    </div>
+    <div>
+        <form method="POST" action="/generate" id="shorten-form">
+            <input type="text" name="url" placeholder="Please enter a URL">
+            <input type="submit" value="Generate Short URL">
+        </form>
+    </div>
+    <div >
+        <p id="shorturl"></p>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>
