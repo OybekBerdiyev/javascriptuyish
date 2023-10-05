@@ -6,10 +6,11 @@ import { AddRoleDto } from './dto/add-role.dto';
 import { ActivateUserDto } from './dto/actuvate-user.dto';
 import { ApiResponse, ApiTags,ApiOperation } from '@nestjs/swagger';
 import { User } from './models/user.model';
-import { JwtAuthGuard } from 'src/guards/jwt-auth.guard';
-import { UserSelfGuard } from 'src/guards/user-self.guard';
-import { Roles } from 'src/decorators/roles-auth.decorator';
-import { RolesGuard } from 'src/guards/roles.guard';
+import { JwtAuthGuard } from '../guards/jwt-auth.guard';
+import { RolesGuard } from '../guards/roles.guard';
+import { Roles } from '../decorators/roles-auth.decorator';
+import { UserSelfGuard } from '../guards/user-self.guard';
+
 
 @ApiTags('Users')
 @Controller('users')

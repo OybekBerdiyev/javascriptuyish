@@ -3,9 +3,9 @@ import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { InjectModel } from '@nestjs/sequelize';
 import { User } from './models/user.model';
-import { RolesService } from 'src/roles/roles.service';
 import { AddRoleDto } from './dto/add-role.dto';
 import { ActivateUserDto } from './dto/actuvate-user.dto';
+import { RolesService } from '../roles/roles.service';
 
 @Injectable()
 export class UsersService {
@@ -44,8 +44,9 @@ export class UsersService {
     const upd = await this.userRepo.update(updateUserDto,{where:{id},returning:true})
     return upd[1][0];  }
 
-  remove(id: number) {
-    return this.userRepo.destroy({where:{id}})
+  async remove(id: number) {
+    await this.userRepo.destroy({where:{id}})
+    return {message: "success"}
   }
 
   async addRole (addRoleDto: AddRoleDto) {

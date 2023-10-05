@@ -1,7 +1,8 @@
 import { BelongsToMany, Column, DataType, Model, Table, HasMany } from "sequelize-typescript";
-import { Role } from "src/roles/models/role.model";
-import { UserRoles } from "src/roles/models/user-roles.model";
-import { Posts } from 'src/posts/models/post.model';
+import { Role } from "../../roles/models/role.model";
+import { UserRoles } from "../../roles/models/user-roles.model";
+import { Posts } from "../../posts/models/post.model";
+
 
 interface IUserCreationAttrs {
     name: string;
