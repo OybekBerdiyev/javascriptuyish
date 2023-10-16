@@ -16,15 +16,15 @@ export class BlocksService {
     return this.blockModel.find();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} block`;
+  findOne(id: string) {
+    return this.blockModel.findById(id);
   }
 
-  update(id: number, updateBlockDto: UpdateBlockDto) {
-    return `This action updates a #${id} block`;
+  update(id: string, updateBlockDto: UpdateBlockDto) {
+    return this.blockModel.findByIdAndUpdate(id, updateBlockDto)
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} block`;
+  remove(id: string) {
+    return this.blockModel.findByIdAndDelete(id)
   }
 }

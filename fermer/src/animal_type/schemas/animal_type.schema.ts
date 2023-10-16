@@ -13,8 +13,8 @@ export class AnimalType {
     @Prop()
     description: string;
     
-    @Prop({type: [{type:mongoose.Schema.Types.ObjectId, ref: "Animal"}] })
-    animals: Animal[];
+    @Prop({ type: [{ type: mongoose.Schema.Types.ObjectId, ref: "Animal" }] })
+    animals: mongoose.Types.ObjectId[];
 }
 
 export const AnimalTypeScheme = SchemaFactory.createForClass(AnimalType)

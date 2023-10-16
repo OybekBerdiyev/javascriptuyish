@@ -2,7 +2,7 @@ import { BadRequestException, Injectable } from '@nestjs/common';
 import { CreateAnimalDto } from './dto/create-animal.dto';
 import { UpdateAnimalDto } from './dto/update-animal.dto';
 import { InjectModel } from '@nestjs/mongoose';
-import { Animal, AnimalDocument } from './schemas/animal.schema';
+import { Animal, AnimalDocument } from  './schemas/animal.schema';
 import { Model } from 'mongoose';
 import { AnimalType, AnimalTypeDocument } from '../animal_type/schemas/animal_type.schema';
 import {v4} from 'uuid';

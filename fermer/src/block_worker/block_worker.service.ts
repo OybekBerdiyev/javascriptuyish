@@ -15,18 +15,18 @@ export class BlockWorkerService {
   }
 
   findAll() {
-    return `This action returns all blockWorker`;
+    return this.blockWorkerModel.find()
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} blockWorker`;
+  findOne(id: string) {
+    return this.blockWorkerModel.findById(id)
   }
 
-  update(id: number, updateBlockWorkerDto: UpdateBlockWorkerDto) {
-    return `This action updates a #${id} blockWorker`;
+  update(id: string, updateBlockWorkerDto: UpdateBlockWorkerDto) {
+    return this.blockWorkerModel.findByIdAndUpdate(id, updateBlockWorkerDto)
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} blockWorker`;
+  remove(id: string) {
+    return this.blockWorkerModel.findByIdAndDelete(id);
   }
 }

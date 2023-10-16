@@ -1,7 +1,6 @@
 
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import mongoose, { HydratedDocument } from "mongoose";
-import { AnimalType } from "../../animal_type/schemas/animal_type.schema";
 
 export type AnimalDocument = HydratedDocument<Animal>
 
@@ -9,8 +8,8 @@ export type AnimalDocument = HydratedDocument<Animal>
 export class Animal {
 
 
-    @Prop({type: mongoose.Schema.Types.ObjectId, ref: "Animaltype"})
-    animal_type_id: AnimalType;
+    @Prop({ type: mongoose.Schema.Types.ObjectId, ref: "AnimalType" })
+    animal_type_id: mongoose.Types.ObjectId;
     
     @Prop()
     photos: Array<string>;

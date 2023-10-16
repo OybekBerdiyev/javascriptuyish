@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, UseInterceptors } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, UseInterceptors, UploadedFile } from '@nestjs/common';
 import { AnimalsService } from './animals.service';
 import { CreateAnimalDto } from './dto/create-animal.dto';
 import { UpdateAnimalDto } from './dto/update-animal.dto';
@@ -10,7 +10,7 @@ export class AnimalsController {
 
   @Post()
   @UseInterceptors(AnyFilesInterceptor())
-  create(@Body() createAnimalDto: CreateAnimalDto, files: Array<object>) {
+  create(@Body() createAnimalDto: CreateAnimalDto, @UploadedFile('files') files: Array<object>) {
     return this.animalsService.create(createAnimalDto,files);
   }
 

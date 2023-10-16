@@ -19,16 +19,16 @@ export class BlockWorkerController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.blockWorkerService.findOne(+id);
+    return this.blockWorkerService.findOne(id);
   }
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateBlockWorkerDto: UpdateBlockWorkerDto) {
-    return this.blockWorkerService.update(+id, updateBlockWorkerDto);
+    return this.blockWorkerService.update(id, updateBlockWorkerDto);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.blockWorkerService.remove(+id);
+    return this.blockWorkerService.remove(id);
   }
 }
