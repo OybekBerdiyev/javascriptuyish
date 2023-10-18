@@ -15,6 +15,7 @@ import { MilkProductionModule } from './milk_production/milk_production.module';
 import { FeedingModule } from './feeding/feeding.module';
 import { RecordsIlnesModule } from './records_ilnes/records_ilnes.module';
 import { RecordsFeedingModule } from './records_feeding/records_feeding.module';
+import { InfoModule } from './info/info.module';
 
 @Module({
   imports: [
@@ -33,7 +34,8 @@ import { RecordsFeedingModule } from './records_feeding/records_feeding.module';
   MilkProductionModule,
   FeedingModule,
   RecordsIlnesModule,
-  RecordsFeedingModule
+  RecordsFeedingModule,
+  InfoModule,
 ],
   controllers: [],
   providers: [],
